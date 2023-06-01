@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --default-border: 0.1rem solid rgba(0, 0, 0, 0.15);
+  --default-border-radius: 1.2rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 12rem 12rem;
+  background-color: #fbfbeb;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    ".hero.form"
+    ".hero.form";
+
+  gap: 8.5rem;
+}
+
+main {
+  grid-area: form;
+}
+aside {
+  grid-area: hero;
+}
+
+aside h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 75px;
+}
+aside h1 span,
+main h2 span {
+  color: #52a14d;
+}
+
+main {
+  width: 60rem;
+  height: 52rem;
+  border: var(--default-border);
+  padding: 4.4rem 5.7rem;
+  border-radius: var(--default-border-radius);
+  position: relative;
+}
+
+main h2 {
+  max-width: 43rem;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+main .actions {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+main .actions a {
+  color: white;
+  border-radius: 1.2rem;
+  text-decoration: none;
+  font-size: 2.4rem;
+  height: 5.5rem;
+  background-color: #52a14d;
+  margin-top: 5.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .actions a + a {
+  background-color: #52a14d;
+  margin-top: 5.4rem;
+}
+
+main header {
+  display: flex;
+  align-items: center;
+}
+
+main header i {
+  padding: 2.5rem;
+  font-size: 2.5rem;
+  color: #52a14d;
+}
+
+main footer p {
+  font-size: 1.6rem;
+  margin-top: 8rem;
+  width: 100vh;
+}
+
+main footer a {
+  color: 000;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+main form {
+  margin-top: 1.6rem;
+}
+
+main form label {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+main form :is(input, select) {
+  width: 48.9rem;
+  height: 5.2rem;
+  background: #ffffff;
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+}
+main form select {
+  appearance: none;
+}
+
+main form .select {
+  position: relative;
+}
+main form .select::after {
+  top: 5rem;
+  right: 1.5rem;
+  font-size: 2.2rem;
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: absolute;
+  z-index: 1;
+  color: #52a14d;
+}
+
+main form .points {
+  position: relative;
+}
+
+main form input + button {
+  position: absolute;
+  right: -3rem;
+  top: calc(2.7rem+2.5rem);
+  background-color: transparent;
+  border: none;
+  font-size: 2.4rem;
+  cursor: pointer;
+  color: #52a14d;
+}
+
+#btn-cadastrar {
+  padding: -1rem;
+  width: 50rem;
+  cursor: pointer;
+}
+
+#plantation {
+  padding: 5rem;
+}
+
+#agro-market {
+}
